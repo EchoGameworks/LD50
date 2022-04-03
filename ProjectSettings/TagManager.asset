@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hand
+  - Note
+  - Top
+  - Board Canvas
+  - Morale
+  - Fame
+  - Technology
+  - Profit
   layers:
   - Default
   - TransparentFX

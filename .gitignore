@@ -36,3 +36,5 @@ sysinfo.txt
 *.unitypackage
 Logs/
 Assets/LeanTween/
+*.psd
+Assets/Plugins/
