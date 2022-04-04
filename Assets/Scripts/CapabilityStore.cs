@@ -42,14 +42,11 @@ public class CapabilityStore : MonoBehaviour
         if (startingValue != currentValue)
         {
             string newText = "<b>" + currentValue.ToString() + "<b>";
-            if(currentValue < startingValue)
-            {
-                newText = "<color=#FF556E>" + newText + "</color>";
-            }
-            else
+            if(currentValue > startingValue)
             {
                 newText = "<color=#94D377>" + newText + "</color>";
             }
+ 
             valueText.text = newText;
         }
         else

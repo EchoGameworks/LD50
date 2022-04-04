@@ -20,7 +20,7 @@ public class Measure : MonoBehaviour
     public void StartNewGame()
     {
 
-        currentValue = Random.Range(5, 10);
+        currentValue = Random.Range(40, 60);
 #if !UNITY_EDITOR
         currentValue = Random.Range(40, 60);
 #endif

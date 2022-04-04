@@ -84,7 +84,7 @@ public class DrawDeck : MonoBehaviour
     public void DrawCards()
     {
         int alreadyInHand = handManager.Notes.Count;
-        int dealAmount = 5 - alreadyInHand;
+        int dealAmount = 6 - alreadyInHand;
         for (int i = 0; i < dealAmount; i++)
         {
             Note drawNote = Notes[Notes.Count - 1];

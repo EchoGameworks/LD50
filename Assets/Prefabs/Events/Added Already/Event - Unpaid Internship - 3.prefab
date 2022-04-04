@@ -647,11 +647,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1963058188824327430, guid: 7cbbf4d1835e9de41bd138efb1f2d217, type: 3}
       propertyPath: m_text
-      value: 0/7
+      value: 0/6
       objectReference: {fileID: 0}
     - target: {fileID: 1963058189036005320, guid: 7cbbf4d1835e9de41bd138efb1f2d217, type: 3}
       propertyPath: TotalCost
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1963058189036005322, guid: 7cbbf4d1835e9de41bd138efb1f2d217, type: 3}
       propertyPath: m_Pivot.x

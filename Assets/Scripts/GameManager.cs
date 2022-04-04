@@ -75,11 +75,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        availableGameEvents = new List<GameEvent>();
-        foreach(GameObject go in availableGameEventGOs)
-        {
-            availableGameEvents.Add(go.GetComponent<GameEvent>());
-        }
+        //availableGameEvents = new List<GameEvent>();
+        //foreach(GameObject go in availableGameEventGOs)
+        //{
+        //    availableGameEvents.Add(go.GetComponent<GameEvent>());
+        //}
         StartNewGame();
     }
 
@@ -88,6 +88,7 @@ public class GameManager : MonoBehaviour
         GameEvents = new List<GameEvent>();
         gameoverCanvas.SetActive(false);
         FundsRaised = 0;
+        
         foreach (Measure m in measures)
         {
             m.StartNewGame();
@@ -121,9 +122,14 @@ public class GameManager : MonoBehaviour
 
     public void AddEvent()
     {
-        if(availableGameEvents == null || availableGameEvents.Count == 0)
+        if (availableGameEvents == null)
         {
             availableGameEvents = new List<GameEvent>();
+        }
+            
+         
+        if (availableGameEvents.Count == 0)
+        {            
             for (int i = 0; i < availableEventHolder.childCount - 1; i++)
             {
                 availableGameEvents.Add(availableEventHolder.GetChild(i).GetComponent<GameEvent>());

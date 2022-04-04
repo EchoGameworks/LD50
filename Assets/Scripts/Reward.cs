@@ -16,7 +16,7 @@ public class Reward : MonoBehaviour
 
     Measure measure;
 
-    private void Start()
+    private void Awake()
     {
         measure = GameObject.FindGameObjectWithTag(CompleteReward.ToString()).GetComponent<Measure>();
         UpdateProgress();
